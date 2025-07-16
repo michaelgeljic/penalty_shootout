@@ -31,14 +31,13 @@ class Player:
         elif keys[pygame.K_DOWN] and self.aim_angle > -self.max_angle:
             self.aim_angle -= 2
         
+        
+    def get_shot_params(self):
+        return self.aim_angle, 18
             
     def draw(self, screen):
         pygame.draw.rect(screen, BLUE, (self.x - self.width//2, self.y - self.height//2, self.width, self.height))
         
-        
-        aim_length = 80
-        end_x = self.x + aim_length * math.cos(math.radians(self.aim_angle))
-        end_y = self.y - aim_length * math.sin(math.radians(self.aim_angle))
-        pygame.draw.line(screen, RED, (self.x, self.y), (end_x, end_y), 3)
+    
         
         
