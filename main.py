@@ -1,6 +1,7 @@
 import pygame
 import sys
 from constants import *
+from field import Field
 
 # Main entry point for the game
 def main():
@@ -15,6 +16,9 @@ def main():
     # Create clock for FPS control
     clock = pygame.time.Clock()
     
+    # Create field 
+    field = Field()
+    
     # Main game loop
     running = True
     while running:
@@ -26,6 +30,9 @@ def main():
         
         # Fill screen with green
         screen.fill(GREEN)
+        
+        # Draw field
+        field.draw(screen)
         
         # Update display
         pygame.display.flip()
