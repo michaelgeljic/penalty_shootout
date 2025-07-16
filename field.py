@@ -20,5 +20,8 @@ class Field:
         pygame.draw.line(screen,WHITE, (GOAL_X + GOAL_WIDTH, GOAL_Y), (GOAL_X + GOAL_WIDTH, GOAL_Y+GOAL_HEIGHT), 6)
         pygame.draw.line(screen,WHITE, (GOAL_X, GOAL_Y), (GOAL_X  + GOAL_WIDTH, GOAL_Y), 3)
         
+        # draw penalty spot
+        pygame.draw.circle(screen, WHITE, (PENALTY_X,PENALTY_Y), 5)
+        
         
                 

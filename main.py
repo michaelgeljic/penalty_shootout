@@ -2,6 +2,7 @@ import pygame
 import sys
 from constants import *
 from field import Field
+from player import Player
 
 # Main entry point for the game
 def main():
@@ -19,6 +20,9 @@ def main():
     # Create field 
     field = Field()
     
+    # Create player
+    player = Player()
+    
     # Main game loop
     running = True
     while running:
@@ -33,6 +37,9 @@ def main():
         
         # Draw field
         field.draw(screen)
+        
+        # Draw Player
+        player.draw(screen)
         
         # Update display
         pygame.display.flip()

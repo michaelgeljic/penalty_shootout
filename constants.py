@@ -27,7 +27,7 @@ GOAL_X = 800
 GOAL_Y = 240
 
 # Penalty position
-PENALTY_X = 333
+PENALTY_X = 370
 PENALTY_Y = 300
 
 # FPS
